@@ -1,0 +1,113 @@
+
+* {
+   box-sizing: border-box;
+}
+body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-family: 'Open Sans', sans-serif;
+   box-sizing: border-box;
+   background-color: #F0F4F8;
+   font-weight: 300;
+}
+
+header{
+background-image: url(images/florence.jpg);    /*Arka plan fotoğrafı ekle*/
+ background-size: cover;                      /*Arka plan fotoğrafının sayfanın tamamını yatayda kaplamasını sağla.*/
+ width: 100%;                                /*Genişliği %100 olarak ayarla.*/
+ min-height: 500px;                          /*Yüksekliği 500px olarak ayarla*/
+}
+#topbar{
+background-image: url(images/logo.png);    /*Logo fotoğrafını ekle.*/
+background-repeat: no-repeat;              /*Logonun satır boyunca tekrarlanmasını engelle.*/
+background-size: 60px;                     /*Logonun boyunu 60px olarak ayarla.*/
+height: 100px;                             /*Menü Barın yüksekliği 100px olarak ayarla.*/
+padding-left: 80px;                        /*Menü Barın sayfanın soluna uzaklığını 80px olarak ayarla.*/
+padding-top: 20px;                         /*Menü Barın sayfanın üstüne olan uzaklığını 20px olarak ayarla.*/
+}
+#topbar ul{
+ list-style-type:none ;                    /*Liste işaretleyicilerini kaldır.*/
+}
+#topbar li{
+display: inline-block;               /*Liste elemanlarını alt alta değil yan yana göster.*/
+margin-right: 20px;                  /*Liste elemanları arası boşluğu 20 px olarak ayarlıyor.*/
+}
+#topbar a{
+text-decoration: none;               /*Yazıların altındaki çizik gözükmesin diye bunu kullanıyoruz.*/
+font-weight: 600;                    /*Yazıların kalınlığını arttır.*/  
+color: #51279B;                   /*Menü Barın üzerine tıklanmadan önceki rengini tanımlıyoruz.*/
+}
+#topbar a:hover{           
+color: #8662C7;                  /*Menü Barın üzerine gelindiğinde veya tıklandığında ki rengini tanımladık.*/
+}
+header div{
+margin-top: 100px;                 /*Menü barın altındaki yazılar Now is the time to explore,Visit the land of your dreams,LEARN MORE yukarıdan 100 px aşşağı indirir.*/ 
+margin-left: 80px;                 /*Menü bara hizzalamak için soldan 80px uzaklaştırıyoruz.*/
+}
+header div h2{
+font-size: 48px;                  /* Now is the time to explore yazısının ölçüsünü giriyoruz.*/  
+color:white;                    /*Rengini beyaz olarak ayarlıyoruz.*/
+margin-bottom: 10px;              /*Altındaki yazıyla arasında boşluk kalması için alt margini 10px yapıyoruz.*/
+}
+header div p{                    
+color: white;                   /*Visit the land of your dreams yazısının rengini beyaz yapıyoruz.*/
+font-size: 24px;                  /*Rengini beyaz olarak ayarlıyoruz.*/
+margin-bottom: 20px;              /*Altındaki Learn More yazısıyla arasında boşluk kalsın diye alt margini 20px olarak ayarlıyoruz.*/
+}
+header div a{
+text-decoration: none;          /*Learn More yazısının altı çizik gözükmesin diye ayaralıyoruz.*/
+background-color:#51279B;     /*Learn More yazısının arka plan rengini ayarlıyoruz.*/
+padding: 15px 20px;             /*Arka plandaki gözükecek renkli kısmın ölçülerini width height olacak şekilde giriyoruz.*/
+color: white;                 /*Learn More yazısının rengini ayarlıyoruz.*/
+}
+header div a:hover{ 
+ background-color: #8662C7;    /*Learn More yazısının üzerine gelindiğinde arka taraftaki renkli kısmın rengini değişecek bu yüzden değiştiğindeki rengi giriyoruz.*/
+}
+main{
+text-align: left;                /*Her şeyi sola hizzalar.*/
+padding: 20px;                   /*Sayfanın kenarlarına ve yukarıdaki görsele olan uzaklığını 20px olarak ayarlar.*/
+}
+.card{
+   display: inline-block;          /*Fotoğrafların yan yana gözükmesi için bunu yapıyoruz.*/
+   width: 25%;                    /*Fotoğrafların genişliğini %25 oranında ayarlıyor.*/
+   margin: 1px;                   /*Fotoğraflar arasındaki boşlukları 1px olarak ayarlıyor.*/   
+   background-color: white;     /*Fotoğraf arka planındaki çerçeve olarak kullanılacak kısımın rengini beyaz olarak ayarlıyoruz.*/
+   text-align: left;              /*Çerçevenin içindeki yazıları sola hizzalıyor.*/
+}
+.card img{
+   width: 100%;                 /*Fotoğrafın çerçevenin tamamını kaplaması için 100% olarak ayarlıyoruz.*/
+}
+.card div{
+   padding: 10px;               /*Kartın içindeki yazıların kenarlara tam dayanmış olarak durmaması için 10px olarak ayarlıyoruz.*/
+}
+.card h3{
+   font-size: 14px;             /*Yazı ölçüsünü verildiği gibi giriyoruz.*/
+}
+.card .description{           
+   font-size: 12px;                /*Çerçevenin altındaki ana başlığın altındaki açıklama yazısının ölçüsünü verildiği gibi giriyoruz.*/
+   color:rgb(71, 71, 71);       /*rengini hafif grimsi olarak ayarlıyoruz.*/   
+   margin-bottom: 10px;           /*Alt tarafında 10px lik boşluk ayarlıyoruz.*/
+}
+.card .social{
+   font-size: 10px;             /*Çerçevenin içindeki kalp ve yorum satırının yanında yazan sayıların ölçüsünü ayarlıyoruz.*/
+}
+.heart{
+   background-image: url(images/heart.png); /*Kalp ikonunu ekliyoruz.*/
+   display: inline-block;                   /*İkonlar yan yana olsun diye ayarlıyoruz.*/
+   padding-left: 18px;                      /*İkon ile yazı arasındaki boşluğu 18px olarak ayarladık.*/  
+   margin-right: 15px;                      /*Diğer ikon için sağ tarafında 15px lik boşluk bırakıyoruz.*/
+   background-repeat: no-repeat;            /*İkonu satır boyunca değil 1 defa göstermek için.*/
+   background-size: 15px;                   /*İkon boyutunu ayarla.*/
+   background-position: left center;        /*İkonu yazılara sol taraftan hizzaladık.*/
+}
+.comment{
+   background-image: url(images/comment.png);     /*Yorum ikonunu ekliyoruz.*/
+   display: inline-block;                         /*ikonlar yan yana olsun diye ayarlıyoruz.*/
+   padding-left: 18px;                            /*İkon ile yazı arasındaki boşluğu 18px olarak ayarladık.*/  
+   margin-right: 15px;                            /*Diğer ikon için sağ tarafında 15px lik boşluk bırakıyoruz.*/
+   background-repeat: no-repeat;                  /*İkonu satır boyunca değil 1 defa göstermek için.*/
+   background-size: 15px;                         /*İkon boyutunu ayarla.*/
+   background-position: left center;              /*İkonu yazılara sol taraftan hizzaladık.*/
+}
